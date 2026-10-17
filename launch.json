@@ -1,0 +1,24 @@
+{
+  "kind": "custom_token",
+  "token": {
+    "contract": "Swarmpeg",
+    "name": "Swarmpeg",
+    "symbol": "SWARMPEG",
+    "decimals": 18,
+    "constructorArgs": [],
+    "totalSupply": "1000000000000000000000000000"
+  },
+  "contracts": [],
+  "pool": {
+    "pairedCurrency": "0xd34a99bc0f67ae1bbd63c660e6d0b0dd03e263b7",
+    "fee": 12500,
+    "tickSpacing": 60,
+    "initialPrice": "79228162514264337593543950336"
+  },
+  "economics": {
+    "poolBps": 8000,
+    "initialMarketCapWei": "2500000000000000000000",
+    "remainderTo": "0x12a7aad083cef06fef7c295514b52fc8bc81960d"
+  },
+  "notes": "Swarmpeg (SWARMPEG) is a plain fixed-supply ERC-20 built on OpenZeppelin ERC20 with 18 decimals. Its constructor takes no arguments and mints the whole supply of 1,000,000,000 tokens (1000000000000000000000000000 minor units) once to msg.sender, which is the factory at launch. There is no owner, no mint, burn, pause, blacklist or fee-on-transfer logic, and no admin functions of any kind, so the supply can never grow and every transfer, including the factory's transfer to the distributor, the pool seed and trades through the PoolManager, moves exactly the stated amount. The launch deploys no application contracts. The pool pairs with IMD at 0xd34a99bc0f67ae1bbd63c660e6d0b0dd03e263b7 at the launch policy's 1.25% fee; the opening price is derived by the deployer from economics.initialMarketCapWei and the supply."
+}
